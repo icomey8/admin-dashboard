@@ -10,13 +10,18 @@
 </head>
 <body>
     <div class="page">
+
+
+    <!--? SIDEBAR -->
         <div class="sidebar">
             <div class="logo">
                     <span class="material-symbols-outlined md-36">spa</span>
-                    <h1 class="noto-sans-mono-main">Dashboard</h1>
+                    <!-- !make font weight heavier -->
+                    <h1 class="noto-sans-mono-main">Dashboard</h1> 
             </div>
             <div class="main-menu">
                 <ul>    
+                    <!-- !make font weight heavier -->
                     <li class="menu-item">
                         <span class="material-symbols-outlined md-24">home</span>
                         <h1 class="noto-sans-mono-secondary">Home</h1>
@@ -44,6 +49,7 @@
                 </ul>
             </div>
             <div class="extra-menu">
+                <!--! fix icon and text vert alignment -->
                 <ul>
                     <li class="menu-item">
                         <span class="material-symbols-outlined md-24">settings</span>
@@ -61,6 +67,9 @@
                 </ul>
             </div>
         </div>
+
+
+    <!--? HEADER -->
         <div class="header">
             <div class="searchbar">
                 <span class="material-symbols-outlined md-24">search</span>
@@ -68,14 +77,25 @@
             </div>
             <div class="profile">
                 <span class="material-symbols-outlined md-24">notifications</span>
-                <span class="material-symbols-outlined md-24">person</span>
-                <h2 class="noto-sans-mono-secondary" id="name">John Doe</h2>
+               <img src="_ (2).jpeg" alt="profile-picture" id="profile-pic-small">
+                <h2 class="noto-sans-mono-secondary" id="name">Mohn Doe</h2>
             </div>
             <div class="nametag">
-                <!-- <h1>hello hello</h1> -->
+                <img src="_ (2).jpeg" alt="profile-picture" id="profile-pic-large">
+                <div class="text-greeting">
+                    <h3 class="noto-sans-mono-secondary" style="font-size:0.75rem;">Hi there,</h3>
+                    <h2 class="noto-sans-mono-secondary" id="name" style="font-size:1.5rem;">Mohn Doe (@mdoe)</h2>
+                </div>
             </div>
-            <div class="create"></div>
+            <div class="create">
+                <button class="noto-sans-mono-secondary">New</button>
+                <button class="noto-sans-mono-secondary">Upload</button>
+                <button class="noto-sans-mono-secondary">Share</button>
+            </div>
         </div>
+
+
+    <!--? MAIN CONTENT -->
         <div class="main-content"></div>
     </div>
 </body>
