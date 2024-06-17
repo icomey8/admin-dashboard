@@ -15,7 +15,7 @@
     <!--? SIDEBAR -->
         <div class="sidebar">
             <div class="logo">
-                    <span class="material-symbols-outlined md-36">spa</span>
+                    <span class="material-symbols-outlined md-36">strategy</span>
                     <!-- !make font weight heavier -->
                     <h1 class="noto-sans-mono-main">Dashboard</h1> 
             </div>
@@ -46,11 +46,7 @@
                         <span class="material-symbols-outlined md-24">groups</span>
                         <h1 class="noto-sans-mono-secondary">Community</h1>
                     </li>
-                </ul>
-            </div>
-            <div class="extra-menu">
-                <!--! fix icon and text vert alignment -->
-                <ul>
+                    <li class="menu-item"></li>
                     <li class="menu-item">
                         <span class="material-symbols-outlined md-24">settings</span>
                         <h1 class="noto-sans-mono-secondary">Settings</h1>
@@ -66,22 +62,43 @@
                     </li>
                 </ul>
             </div>
+
+                <!--! fix icon and text vert alignment -->
+
         </div>
 
 
     <!--? HEADER -->
         <div class="header">
-            <div class="searchbar">
+            <div class="top-section">
+                <div class="searchbar">
+                    <span class="material-symbols-outlined md-24">search</span>
+                    <input type="search">
+                </div>
+                <div class="profile">
+                    <span class="material-symbols-outlined md-24">notifications</span>
+                    <span class="material-symbols-outlined md-24">face</span>
+                    <h2 class="noto-sans-mono-secondary" id="name">Mohn Doe</h2>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="nametag">
+                    <span class="material-symbols-outlined md-48">face</span>
+                    <div class="text-greeting">
+                        <h3 class="noto-sans-mono-secondary" style="font-size:0.75rem;">Hi there,</h3>
+                        <h2 class="noto-sans-mono-secondary" id="name" style="font-size:1.5rem;">Mohn Doe (@mdoe)</h2>
+                    </div>
+                </div>
+
+                <div class="create">
+                    <button class="noto-sans-mono-secondary">New</button>
+                    <button class="noto-sans-mono-secondary">Upload</button>
+                    <button class="noto-sans-mono-secondary">Share</button>
+                </div> 
+            </div>
+
+            <!-- <div class="nametag">
                 <span class="material-symbols-outlined md-24">search</span>
-                <input type="search">
-            </div>
-            <div class="profile">
-                <span class="material-symbols-outlined md-24">notifications</span>
-               <img src="_ (2).jpeg" alt="profile-picture" id="profile-pic-small">
-                <h2 class="noto-sans-mono-secondary" id="name">Mohn Doe</h2>
-            </div>
-            <div class="nametag">
-                <img src="_ (2).jpeg" alt="profile-picture" id="profile-pic-large">
                 <div class="text-greeting">
                     <h3 class="noto-sans-mono-secondary" style="font-size:0.75rem;">Hi there,</h3>
                     <h2 class="noto-sans-mono-secondary" id="name" style="font-size:1.5rem;">Mohn Doe (@mdoe)</h2>
@@ -91,7 +108,7 @@
                 <button class="noto-sans-mono-secondary">New</button>
                 <button class="noto-sans-mono-secondary">Upload</button>
                 <button class="noto-sans-mono-secondary">Share</button>
-            </div>
+            </div> -->
         </div>
 
 

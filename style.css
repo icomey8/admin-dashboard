@@ -42,8 +42,8 @@
     /* gap: 5px; */
     height: 120vh;
     max-width: 100vw;
-    grid-template-columns:  250px repeat(4, 1fr);
-    grid-template-rows: 150px repeat(3, 1fr);
+    grid-template-columns:  240px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
 
@@ -54,11 +54,11 @@
 
 /* SIDEBAR SETUP */
 .sidebar {
-    grid-area: 1 / 1 / 6 / 2;
+    grid-area: 1 / 1 / 3 / 2;
     background-color: #ffffff;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px repeat(2, 1fr);
+    grid-template-rows: 90px 1fr;
     /* gap: 5px; */
 }
 
@@ -105,6 +105,7 @@
 }
 
 .extra-menu {
+    grid-area: 2 / 1 / 3 / 2;
     background-color: #212121;
     display: flex;
     flex-direction: column;
@@ -123,62 +124,69 @@
     grid-area: 1 / 2 / 2 / 6;
     background-color: #333333;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.top-section {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 10px 40px 4px;
 }
 
 .searchbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 14px;
-    margin-left: 7%;
-    grid-area: 1 / 1 / 2 / 5;
+    gap: 20px;
+    flex-grow: 1;
 }
 
 .searchbar input {
     background-color: #474747;
-    width: 650px;
+    width: 500px;
     height: 27px;
     border-radius: 12px;
     border: none;
     padding: 10px;
     caret-color: #ffffff;
-    color: #ffffff
+    color: #ffffff;
+    flex-grow: 1;
 }
 
 .profile {
-    grid-area: 1 / 5 / 2 / 6;
     display: flex;
-    gap: 30px;
-    justify-content: flex-start;
     align-items: center;
+    gap: 32px;
 }
 
 .profile #name {
     color:#ffffff;
 }
 
-#profile-pic-small, #profile-pic-large {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    border-radius: 50%;
+
+.bottom-section {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 10px 40px 4px;
 }
 
-#profile-pic-large {
-    width: 50px;
-    height: 50px;
-}
+
 
 .nametag {
     grid-area: 2 / 1 / 3 / 4;
     display: flex;
     align-items: center;
-    margin-left: 9%;
-    margin-bottom: 15px;
+    margin-left: 2%;
     gap: 20px;
 }
+
 
 .nametag .text-greeting {
     color: #ffffff;
@@ -192,8 +200,8 @@
     margin-top: 5px;
 }
 
+ 
 .create {
-    grid-area: 2 / 4 / 3 / 6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,11 +211,11 @@
 .create button {
     background-color: #a78bfa;
     color: #ffffff;
-    height: 40px;
-    width: 120px;
+    height: 35px;
+    width: 100px;
     border-radius: 18px;
     border: 0px;
-}
+} 
 
 
 
