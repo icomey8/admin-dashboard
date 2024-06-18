@@ -246,25 +246,35 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     position: relative;
-    margin-top: 20px
-
+    /* margin-top: 10px */
 }
-
-.projects > h3 {
-    position: absolute;
-    top: -42px;
-    font-size: 1.3rem;
-}
-
-.announcements {
-    grid-area: 1 / 4 / 4 / 5;
-}
-
 
 .card {
-    width: 100%;
+    width: 90%;
     background-color: #333333;
     border-radius: 8px;
+    border-left: 7px solid #a78bfa;
 }
+
+.projects > h3, .announcements > h3, .trending > h3 {
+    position: absolute;
+    top: -36px;
+    font-size: 1.0rem;
+}
+
+.announcements, .trending {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: (3, 90px);
+    background-color: #333333;
+    border-radius: 8px;
+    position: relative;
+}
+
+.trending {
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template-rows: (4, 90px);
+}
+
 
 
